@@ -1,0 +1,104 @@
+body {
+  background: #121212 !important;
+}
+
+.main-component-div {
+  padding: 30px 15px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #242424;
+}
+
+.t-align {
+  text-align: center !important;
+}
+
+.login-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.nav {
+  width: auto;
+  background-color: #000;
+  border: 0;
+  display: inline-flex;
+  border-radius: 50px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.nav .nav-link {
+  border-radius: 50px;
+  border: 0;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.custom-button,
+.nav .nav-link.active {
+  background-color: #10ff8d;
+  color: #000;
+  border-radius: 50px;
+  border: 0;
+}
+
+.custom-button:hover,
+.nav .nav-link {
+  background-color: #000;
+  color: #fff;
+}
+
+.form div {
+  text-align: left;
+}
+
+.form span.err-msg {
+  color: #b92525 !important;
+  font-weight: 600 !important;
+  margin-left: 10px !important;
+}
+
+.form-heading {
+  margin: 10px 0 25px;
+  font-size: 30px;
+}
+
+.form label {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.form input {
+  border: 5px solid #17aa64;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+}
+
+.form input.form-control:focus {
+  border-color: #17aa64;
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+
+.form-check {
+  display: inline-block !important;
+}
+.form input[type='checkbox'] {
+  border: 1px solid #17aa64;
+}
+
+.nav-tag {
+  display: inline-flex !important;
+  cursor: pointer !important;
+}
