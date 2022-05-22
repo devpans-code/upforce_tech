@@ -5,35 +5,30 @@ import FormComponent from '../FormComponent';
 import { updateState, validFirstName, validLastName, validEmail, validPassword, validUsername, validPolicy } from "../Validation";
 
 const FanComponent = () => {
-  const [firstName, setFirstName] = useState();
+  const [firstName, setFirstName] = useState("");
   const [errFirstName, setErrFirstName] = useState({ valid: false, msg: "" });
-  const [lastName, setLastName] = useState();
+  const [lastName, setLastName] = useState("");
   const [errLastName, setErrLastName] = useState({ valid: false, msg: "" });
-  const [username, setUserName] = useState();
+  const [username, setUserName] = useState("");
   const [errUsername, setErrUsername] = useState({ valid: false, msg: "" });
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState("");
   const [errEmail, setErrEmail] = useState({ valid: false, msg: "" });
-  const [password, setPassword] = useState();
+  const [password, setPassword] = useState("");
   const [errPassword, setErrPassword] = useState({ valid: false, msg: "" });
   const [accept, setAccept] = useState(false);
   const [errAccept, setErrAccept] = useState({ valid: false, msg: "" });
   const [isDisabled, setIsDisabled] = useState(true);
-  const [success, setSuccess] = useState(false);
 
   useEffect(() => {
     setIsDisabled(errFirstName.valid && errLastName.valid && errEmail.valid && errPassword.valid && errUsername.valid && errAccept.valid ? false : true)
   }, [errFirstName, errLastName, errEmail, errPassword, errUsername, errAccept]);
 
-  useEffect(() => {
-    resetData();
-  }, [success]);
-
   const resetData = () => {
-    setFirstName();
-    setLastName();
-    setEmail();
-    setUserName();
-    setPassword();
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setUserName("");
+    setPassword("");
     setAccept(false);
     setErrUsername({ valid: false, msg: "" });
     setErrEmail({ valid: false, msg: "" });
@@ -118,7 +113,6 @@ const FanComponent = () => {
       return;
     }
     alert("Congratulations! Fan data created");
-    setSuccess(true);
     resetData();
   }
 
