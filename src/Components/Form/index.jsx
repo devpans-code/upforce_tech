@@ -8,7 +8,6 @@ const MainComponent = () => {
   const [activeTabclass, setActiveTabClass] = useState(1);
 
   const changeTab = (id) => {
-    alert("clicked")
     setActiveTabClass(parseInt(id));
   }
 
